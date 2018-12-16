@@ -1,0 +1,10 @@
+<h3><i class="fas {{ .Site.Params.experiences.icon }}"></i> {{ .Site.Params.experiences.title }}</h3>
+
+{{ range .Site.Params.jobs.list }}
+<dl>
+    <dt>{{ .position }}</dt>
+    <dd class="mb-0 ml-3">{{ .dates | markdownify }}</dd>
+    <dd class="mb-0 ml-3">{{ if .link }}<a class="text-warning" href="{{ .link }}">{{ .company }}</a>{{ else }} {{ .company }} {{ end }}</dd>
+    <dd class="mb-0 ml-3">{{ .details | markdownify }}</dd>
+</dl>
+{{ end }}

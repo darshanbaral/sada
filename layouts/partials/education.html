@@ -1,0 +1,14 @@
+<h3>{{ .Site.Params.education.title }}</h3>
+{{ range .Site.Params.education.list }}
+<dl>
+    <dt><i class="fas fa-graduation-cap"></i> {{ .degree }}</dt>
+    <dd class="mb-0 ml-3">{{ .college }}</dd>
+    <dd class="mb-0 ml-3">{{ .dates }}</dd>
+    {{ if .thesis_link }}
+    <dd class="mb-0 ml-4">
+        Thesis:
+        <a class="text-warning" href="{{ .thesis_link }}"><i>{{ .thesis_title }}</i></a>
+    </dd>
+    {{ end }}
+</dl>
+{{ end }}

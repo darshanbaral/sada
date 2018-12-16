@@ -1,0 +1,9 @@
+<ul class="list-inline mb-1">
+    {{ range .Site.Params.social.list }}
+    <li class="list-inline-item ml-1 mr-1">
+        <a class="text-warning" href="{{ .url }}">
+            <i class="{{ .class }} {{ .icon }}" style="font-size:25px;"></i>
+        </a>
+    </li>
+    {{ end }}
+</ul>

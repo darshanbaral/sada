@@ -1,0 +1,8 @@
+<h3><i class="fas {{ .Site.Params.skills.icon }}"></i> {{ .Site.Params.skills.title }}</h3>
+{{ range .Site.Params.skills.list }}
+<div class="rounded w-100 bg-secondary mt-4">
+    <div class="card bg-success" style="width: {{ .skillrating }}%;">
+        <code class="text-white ml-2">{{ .skill }}</code>
+    </div>
+</div>
+{{ end }}

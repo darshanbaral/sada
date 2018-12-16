@@ -1,0 +1,6 @@
+<h3>{{ .Site.Params.hobbies.title }}</h3>
+<ul class="list-unstyled" style="text-indent: 1.25em;">
+    {{ range .Site.Params.hobbies.list }}
+    <li>{{ .interest }}</li>
+    {{ end }}
+</ul>

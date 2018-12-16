@@ -1,0 +1,6 @@
+<h3 class="mt-4"><i class="fas {{ .Site.Params.projects.icon }}"></i> {{ .Site.Params.projects.title }}</h3>
+{{ range .Site.Params.projects.list }}
+<ul class="list-unstyled">
+    <li><a class="text-warning" href="{{ .url }}">{{ .title }}</a> - {{ .description | markdownify }}</li>
+</ul>
+{{ end }}
