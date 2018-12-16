@@ -1,6 +1,6 @@
-# Sada Theme
+# sada Theme
 
-The Sada Theme is a one page responsive portfolio created using Bootstrap 4.
+The sada Theme is a one page responsive portfolio created using Bootstrap 4.
 
 ## Installation
 
