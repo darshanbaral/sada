@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "http://example.org/"
 languageCode = "en-us"
 theme = "sada"
 
