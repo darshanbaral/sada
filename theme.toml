@@ -13,9 +13,3 @@ min_version = "0.41"
 [author]
   name = "Darshan Baral"
   homepage = "darshanbaral.com"
-
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""
