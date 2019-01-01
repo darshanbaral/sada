@@ -17,7 +17,7 @@ After installing the Sada Theme successfully, modify the `config.toml` as you wi
 
 ### The config file
 
-You'll find a file called [`config.toml`](//github.com/darshanbaral/sada/blob/master/exampleSite/config.toml). Copy the `config.toml`to the root folder of your Hugo site customize it per your need.
+You'll find a file called [`config.toml`](//github.com/darshanbaral/sada/blob/master/exampleSite/config.toml). Copy the `config.toml`to the root folder of your Hugo site and customize it per your need.
 
 ### Add your photo
 
