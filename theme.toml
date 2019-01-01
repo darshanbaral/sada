@@ -3,9 +3,9 @@
 
 name = "Sada"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+licenselink = "https://github.com/darshanbaral/sada/blob/master/LICENSE"
 description = "Simple theme for resume created using Bootstrap 4"
-homepage = "https://github.com/darshanbaral/hugo_themes/tree/master/sada"
+homepage = "https://github.com/darshanbaral/sada"
 tags = ["portfolio", "resume", "simple", "onepage"]
 features = ["responsive"]
 min_version = "0.41"
