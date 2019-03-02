@@ -22,7 +22,3 @@ You'll find a file called [`config.toml`](//github.com/darshanbaral/sada/blob/ma
 ### Add your photo
 
 Go to `static/images` and replace the `profile.jpg` with your own file.
-
-
-### Easter Egg
-Click on the profie picture :)
