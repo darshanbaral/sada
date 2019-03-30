@@ -6,7 +6,7 @@ var lightTheme = {
   altText: "text-secondary",
   mainText: "text-dark",
   linkText: "text-success",
-  skillBackground: "bg-danger"
+  skillBackground: "bg-success"
 };
 
 var darkTheme = {
@@ -15,7 +15,7 @@ var darkTheme = {
   altText: "text-light",
   mainText: "text-white",
   linkText: "text-warning",
-  skillBackground: "bg-success"
+  skillBackground: "bg-warning"
 };
 
 var isDark = true;

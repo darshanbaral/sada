@@ -4,7 +4,13 @@
 </h3>
 {{ range.Site.Params.skills.list }}
 <code>{{ .skill }}</code>
-<div class="rounded w-100 bg-secondary border border-secondary mt-1 mb-3">
-  <div class="card bg-success" style="width: {{ .skillrating }}%; height:15px;"></div>
+<div
+  class="w-100 bg-secondary border border-secondary mt-1 mb-3"
+  style="height:15px;"
+>
+  <div
+    class="bg-warning h-100"
+    style="width: {{ .skillrating }}%;"
+  ></div>
 </div>
 {{ end }}

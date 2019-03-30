@@ -1,5 +1,5 @@
 <div class="d-flex flex-column flex-sm-row mt-2">
-  <div class="mr-4">
+  <div class="mr-4 text-center float-left" style="width: 160px;">
     <script src="{{ .Site.BaseURL }}/src/sada_main.js"></script>
     <img
       class="rounded-circle"
@@ -7,8 +7,10 @@
       alt="{{ .Site.Params.author }}"
       style="width: 150px;"
     />
-    <h3 onclick="toggleTheme()">
-      <a class="text-white" href="#"><i class="fas fa-yin-yang"></i></a>
+    <h3 class="toggleTheme text-white mt-2" onclick="toggleTheme()" title="toggle theme">
+      <i class="material-icons">
+        brightness_medium
+      </i>
     </h3>
   </div>
 
