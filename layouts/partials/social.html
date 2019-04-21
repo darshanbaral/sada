@@ -1,7 +1,7 @@
 <ul class="list-inline mb-1 mt-2">
     {{ range .Site.Params.social.list }}
     <li class="list-inline-item ml-1 mr-1">
-        <a class="text-warning" href="{{ .url }}">
+        <a class="text-warning" href="{{ .url }}" rel="me">
             <i class="{{ .class }} {{ .icon }}" style="font-size:25px;"></i>
         </a>
     </li>
