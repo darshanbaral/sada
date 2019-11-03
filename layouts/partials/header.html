@@ -1,25 +1,32 @@
-<div class="d-flex flex-column flex-sm-row mt-2">
-  <div class="mr-4 text-center float-left" style="width: 160px;">
-    <script src="{{ .Site.BaseURL }}/src/sada_main.js"></script>
-    <img
-      class="rounded-circle"
-      src="{{ .Site.BaseURL }}/images/{{ .Site.Params.profile.photo }}"
-      alt="{{ .Site.Params.author }}"
-      style="width: 150px;"
-    />
-    <h3 class="toggleTheme text-white mt-2" onclick="toggleTheme()" title="toggle theme">
-      <i class="material-icons">
-        brightness_medium
-      </i>
+<script src="{{ `src/sada_main.js` | relURL }}"></script>
+<div class="d-flex flex-column border-bottom border-secondary pb-4 pl-2 pr-2">
+  <div class="d-flex flex-row justify-content-between">
+    {{ partial "social.html" . }}
+    <h3
+      class="toggleTheme text-white mt-2"
+      onclick="toggleTheme()"
+      title="toggle theme"
+    >
+      <i class="material-icons" style="cursor: pointer;">brightness_medium</i>
     </h3>
   </div>
 
-  <div>
-    {{ partial "social.html" . }}
-    <h1 class="text-white mb-1">{{ .Site.Params.profile.name }}</h1>
-    <h3 class="text-light">{{ .Site.Params.description }}</h3>
-    <p class="text-white">
-      {{ .Site.Params.aboutme.description | markdownify }}
-    </p>
+  <div class="d-flex flex-column flex-sm-row mt-2">
+    <div class="mr-4 text-center float-left" style="width: 300px;">
+      <img
+        class="rounded"
+        src="{{ .Site.Params.profile.photo | relURL }}"
+        alt="{{ .Site.Params.author }}"
+        style="width: 300px;"
+      />
+    </div>
+
+    <div class="d-flex flex-column justify-content-end">
+      <h1 class="text-white mb-1">{{ .Site.Params.profile.name }}</h1>
+      <h3 class="text-light">{{ .Site.Params.description }}</h3>
+      <p class="text-white">
+        {{ .Site.Params.aboutme.description | markdownify }}
+      </p>
+    </div>
   </div>
 </div>

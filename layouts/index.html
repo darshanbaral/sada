@@ -1,27 +1,19 @@
-<!DOCTYPE html>
-<html lang="{{ .Site.Language }}">
-  {{ partial "head.html" . }}
+{{ define "main" }}
+<div class="row no-gutters mt-4">
+  <div
+    class="col-sm-4 order-sm-2 bg-secondary text-white rounded p-3"
+  >
+    {{ partial "education.html" . }}
+    <hr style="width:50%;" />
+    {{ partial "language.html" . }}
+    <hr style="width:50%;" />
+    {{ partial "hobby.html" . }}
+  </div>
 
-  <body class="bg-dark container" style="font-family: 'Roboto', sans-serif;">
-    {{ partial "header.html" . }}
-    <div class="row mt-1">
-      <div
-        class="col-sm-4 order-sm-2 bg-secondary text-white border border-secondary rounded pt-3"
-      >
-        {{ partial "education.html" . }}
-        <hr style="width:50%;" />
-        {{ partial "language.html" . }}
-        <hr style="width:50%;" />
-        {{ partial "hobby.html" . }}
-      </div>
-
-      <div class="col-sm-8 text-white pt-3">
-        {{ partial "experience.html" . }}
-        {{ partial "project.html" . }}
-        {{ partial "skill.html" . }}
-      </div>
-    </div>
-
-    {{ partial "footer.html" . }}
-  </body>
-</html>
+  <div class="col-sm-8 text-white p-3">
+    {{ partial "experience.html" . }}
+    {{ partial "project.html" . }}
+    {{ partial "skill.html" . }}
+  </div>
+</div>
+{{ end }}
