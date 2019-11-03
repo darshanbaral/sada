@@ -12,7 +12,7 @@ theme = "sada"
     # Profile section
     [params.profile]
         name = "Sada Theme"
-        photo = "profile.jpg"
+        photo = "images/profile.jpg"
 
     # Section for links to social websites
     [params.social]
