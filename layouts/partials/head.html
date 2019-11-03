@@ -9,7 +9,7 @@
   <script src="/src/toggleTheme.js"></script>
   <script src="/src/sada_main.js"></script>
 
-  <link href="{{ .Site.BaseURL }}/src/bootstrap.min.css" rel="stylesheet" />
+  <link href="{{ `src/bootstrap.min.css` | relURL }}" rel="stylesheet" />
   <link
     rel="stylesheet"
     href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
@@ -26,11 +26,11 @@
   />
 
   <style>
-    .toggleTheme {
-      cursor: pointer;
-    }
     .bg-dark {
       background-color: #23272c !important;
+    }
+    .bg-light {
+      background-color: #ddd !important;
     }
   </style>
 </head>
