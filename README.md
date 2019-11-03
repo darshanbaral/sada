@@ -2,6 +2,10 @@
 
 The sada Theme is a one page responsive portfolio created using Bootstrap 4.
 
+## Live demo
+
+[Click here](https://sadademo.netlify.com/) for live demo.
+
 ## Installation
 
 Inside the folder of your Hugo site run:
