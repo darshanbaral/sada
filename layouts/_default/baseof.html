@@ -1,12 +1,8 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.Language }}">
+<html lang="{{ .Site.Language }}" class="{{ .Site.Params.theme }}">
   {{- partial "head.html" . -}}
-  <body
-    class="bg-dark container mt-2 mb-2"
-    style="font-family: 'Roboto', sans-serif;"
-  >
+  <body class="max-w-screen-md mx-auto prose dark:prose-dark px-2 pb-4 bg-gray-100 dark:bg-dark1 duration-250">
     {{- partial "header.html" . -}}
-    <div id="content">{{- block "main" . }}{{ end }}</div>
-    {{- partial "footer.html" . -}}
+    <main class="flex sm:flex-row-reverse flex-row flex-wrap">{{- block "main" . }}{{ end }}</main>
   </body>
 </html>

@@ -1,6 +1,4 @@
 <h3>{{ .Site.Params.language.title }}</h3>
-<ul class="list-unstyled" style="text-indent: 1.25em;">
-    {{ range .Site.Params.language.list }}
-    <li>{{ .language }} <span class="lang-desc">({{ .level }})</span></li>
-    {{ end }}
-</ul>
+{{ range .Site.Params.language.list }}
+<p class="ml-1">{{ .language }} ({{ .level }})</p>
+{{ end }}

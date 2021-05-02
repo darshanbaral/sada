@@ -4,7 +4,7 @@
 name = "Sada"
 license = "MIT"
 licenselink = "https://github.com/darshanbaral/sada/blob/master/LICENSE"
-description = "Simple theme for resume created using Bootstrap 4"
+description = "Simple theme for resume created using Tailwind CSS"
 homepage = "https://github.com/darshanbaral/sada"
 tags = ["portfolio", "resume", "simple", "onepage"]
 features = ["responsive"]

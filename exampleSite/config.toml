@@ -1,13 +1,15 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 theme = "sada"
+disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
     title = "Sada Theme"
     author = "Darshan Baral"
-    description = "Simple bootstrap 4 theme"
+    description = "Simple single page resume theme"
     copyright = ""
-    copyright_link = ""
+    theme = "dark" # or light
+    useResources = false
 
     # Profile section
     [params.profile]
@@ -91,7 +93,6 @@ theme = "sada"
 
     # Experiences section
     [params.experiences]
-        icon = "fa-briefcase"
         title = "Experiences"
 
         [[params.jobs.list]]
@@ -109,7 +110,6 @@ theme = "sada"
 
     # Projects section
     [params.projects]
-        icon = "fa-project-diagram"
         title = "Projects"
 
         [[params.projects.list]]
@@ -124,7 +124,6 @@ theme = "sada"
 
     # Skills section
     [params.skills]
-        icon = "fa-cogs"
         title = "Skills"
 
         [[params.skills.list]]

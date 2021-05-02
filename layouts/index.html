@@ -1,19 +1,21 @@
 {{ define "main" }}
-<div class="row no-gutters">
-  <div class="col-sm-4 order-sm-2 bg-secondary text-white p-2">
+<section
+  class="w-full sm:w-2/5 bg-gray-200 dark:bg-dark2 p-3 rounded shadow flex flex-col justify-between"
+>
+  <div>
     {{ partial "profilePhoto" . }}
+    {{ partial "social.html" . }}
     {{ partial "aboutDesc" . }}
-    <hr style="width:50%;" />
     {{ partial "language.html" . }}
-    <hr style="width:50%;" />
     {{ partial "hobby.html" . }}
   </div>
+  {{- partial "footer.html" . -}}
+</section>
 
-  <div class="col-sm-8 text-white p-2">
-    {{ partial "experience.html" . }}
-    {{ partial "education.html" . }}
-    {{ partial "project.html" . }}
-    {{ partial "skill.html" . }}
-  </div>
-</div>
+<section class="w-full sm:w-3/5 px-3">
+  {{ partial "experience.html" . }}
+  {{ partial "education.html" . }}
+  {{ partial "project.html" . }}
+  {{ partial "skill.html" . }}
+</section>
 {{ end }}

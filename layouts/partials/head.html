@@ -6,10 +6,7 @@
   <meta name="description" content="{{ .Site.Params.description }}" />
   <meta name="author" content="{{ .Site.Params.author }}" />
 
-  <script src="/src/toggleTheme.js"></script>
-  <script src="/src/sada_main.js"></script>
-
-  <link href="{{ `src/bootstrap.min.css` | relURL }}" rel="stylesheet" />
+  {{ partial "linkCSS" . }}
   <link
     rel="stylesheet"
     href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
@@ -20,17 +17,4 @@
     rel="stylesheet"
     href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
   />
-  <link
-    href="https://fonts.googleapis.com/css?family=Roboto|Material+Icons"
-    rel="stylesheet"
-  />
-
-  <style>
-    .bg-dark {
-      background-color: #23272c !important;
-    }
-    .bg-light {
-      background-color: #ddd !important;
-    }
-  </style>
 </head>

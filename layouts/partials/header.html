@@ -1,14 +1,22 @@
-<script src="{{ `src/sada_main.js` | relURL }}"></script>
-<div class="d-flex flex-column border-bottom border-secondary pl-2 pr-2">
-  <h1 class="text-white mb-1">{{ .Site.Params.profile.name }}</h1>
-  <div class="d-flex flex-row justify-content-between">
-    {{ partial "social.html" . }}
-    <h3
-      class="toggleTheme text-white mt-2"
-      onclick="toggleTheme()"
-      title="toggle theme"
-    >
-      <i class="material-icons" style="cursor: pointer;">brightness_medium</i>
-    </h3>
-  </div>
-</div>
+<header class="flex flex-row justify-between mb-6 px-3 pt-2">
+  <h1 class="mb-1">{{ .Site.Params.profile.name }}</h1>
+  <i
+    class="toggle-theme text-3xl cursor-pointer fas {{ if eq .Site.Params.theme `light` }}fa-moon{{ else }}fa-sun{{ end }} text-gray-600 hover:text-gray-800 dark:text-gray-500 dark:hover:text-gray-200"
+    onclick="toggleTheme(this)"
+  ></i>
+</header>
+
+<script>
+  const toggleTheme = (el) => {
+    const html = document.querySelector("html");
+    if (el.classList.contains("fa-moon")) {
+      el.classList.remove("fa-moon");
+      el.classList.add("fa-sun");
+      html.classList.add("dark");
+    } else {
+      el.classList.remove("fa-sun");
+      el.classList.add("fa-moon");
+      html.classList.remove("dark");
+    }
+  };
+</script>
