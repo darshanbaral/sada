@@ -3,6 +3,7 @@
   class="w-full sm:w-2/5 bg-gray-200 dark:bg-dark2 p-3 rounded shadow flex flex-col justify-between"
 >
   <div>
+    <h1 class="text-center">{{ .Site.Params.profile.name }}</h1>
     {{ partial "profilePhoto" . }}
     {{ partial "social.html" . }}
     {{ partial "aboutDesc" . }}

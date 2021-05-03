@@ -4,6 +4,7 @@ theme = "sada"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
+    name = "example.org"
     title = "Sada Theme"
     author = "Darshan Baral"
     description = "Simple single page resume theme"
