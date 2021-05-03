@@ -1,7 +1,9 @@
 <div class="flex justify-center w-full">
-  <img
-    class="my-0 rounded-full w-4/5 h-auto max-w-none"
-    src="{{ .Site.Params.profile.photo | relURL }}"
-    alt="{{ .Site.Params.author }}"
-  />
+  <div class="w-4/5">
+    <img
+      class="my-0 rounded-full"
+      src="{{ .Site.Params.profile.photo | relURL }}"
+      alt="{{ .Site.Params.author }}"
+    />
+  </div>
 </div>

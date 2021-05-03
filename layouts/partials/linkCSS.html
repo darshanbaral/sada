@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
     {{ else }}
         <!-- minify for prod -->
-        {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
+        {{ $styles := $styles | fingerprint | resources.PostCSS (dict "inlineImports" true) }}
         <link
         rel="stylesheet"
         href="{{ $styles.RelPermalink }}"
