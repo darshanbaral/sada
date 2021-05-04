@@ -7,9 +7,9 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
     name = "example.org"
     title = "Sada Theme"
     author = "Darshan Baral"
-    description = "Simple single page portfolio theme made with Tailwind CSS"
+    description = "Simple portfolio theme"
     copyright = "Custom copyright message"
-    theme = "light" # or light
+    theme = "light" # `dark` or `light`
     useResources = false
 
     # Profile section
