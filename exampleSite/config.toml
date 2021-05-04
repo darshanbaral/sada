@@ -7,9 +7,9 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
     name = "example.org"
     title = "Sada Theme"
     author = "Darshan Baral"
-    description = "Simple single page resume theme"
-    copyright = ""
-    theme = "dark" # or light
+    description = "Simple single page portfolio theme made with Tailwind CSS"
+    copyright = "Custom copyright message"
+    theme = "light" # or light
     useResources = false
 
     # Profile section
@@ -22,26 +22,22 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
         title = "Links"
 
         [[params.social.list]]
-        class = "fab"
-        icon = "fa-linkedin-in"
+        icon = "fab fa-linkedin-in"
         url = "#"
         title = "LinkedIn"
 
         [[params.social.list]]
-        class = "fab"
-        icon = "fa-github"
+        icon = "fab fa-github"
         url = "#"
         title = "GitHub"
 		
 		[[params.social.list]]
-        class = "ai"
-        icon = "ai-google-scholar"
+        icon = "ai ai-google-scholar"
         url = "#"
         title = "Google Scholar"
 		
 		[[params.social.list]]
-        class = "ai"
-        icon = "ai-researchgate"
+        icon = "ai ai-researchgate"
         url = "#"
         title = "ResearchGate"		
 
