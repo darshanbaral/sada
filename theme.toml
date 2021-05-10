@@ -6,8 +6,8 @@ license = "MIT"
 licenselink = "https://github.com/darshanbaral/sada/blob/master/LICENSE"
 description = "Simple theme for resume created using Tailwind CSS"
 homepage = "https://github.com/darshanbaral/sada"
-tags = ["portfolio", "resume", "simple", "onepage"]
-features = ["responsive"]
+tags = ["portfolio", "resume", "simple", "onepage", "tailwindcss"]
+features = ["responsive", "tailwindcss"]
 min_version = "0.80.0"
 
 [author]
