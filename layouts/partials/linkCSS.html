@@ -1,17 +1,7 @@
-{{ if .Site.Params.useResources }}
-    {{ $styles := resources.Get "css/main.css" | postCSS }}
-    <!-- process CSS -->
-    {{ if .Site.IsServer }}
-        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
-    {{ else }}
-        <!-- minify for prod -->
-        {{ $styles := $styles | fingerprint | resources.PostCSS (dict "inlineImports" true) }}
-        <link
-        rel="stylesheet"
-        href="{{ $styles.RelPermalink }}"
-        integrity="{{ $styles.Data.Integrity }}"
-        />
-    {{ end }}
-{{ else }}
-    <link rel="stylesheet" href="{{ `css/main.min.css` | relURL }}" />
+{{ $css := resources.Get "main.css" }}
+{{ $css = $css | resources.PostCSS }}
+{{ if hugo.IsProduction }}
+{{ $css = $css | minify | fingerprint | resources.PostProcess }}
 {{ end }}
+<link href="{{ $css.RelPermalink }}" rel="stylesheet" />
+
