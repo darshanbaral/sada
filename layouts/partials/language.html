@@ -1,4 +1,6 @@
-<h3>{{ .Site.Params.language.title }}</h3>
-{{ range .Site.Params.language.list }}
-<p class="ml-1">{{ .language }} ({{ .level }})</p>
-{{ end }}
+<div class="px-3">
+  <h3>{{ .Site.Params.language.title }}</h3>
+  {{ range .Site.Params.language.list }}
+  <p class="ml-1">{{ .language }} ({{ .level }})</p>
+  {{ end }}
+</div>

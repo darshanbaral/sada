@@ -17,4 +17,20 @@
     rel="stylesheet"
     href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
   />
+
+  <script>
+    const toggleTheme = (el) => {
+      const html = document.querySelector("html");
+      if (el.classList.contains("fa-moon")) {
+        el.classList.remove("fa-moon");
+        el.classList.add("fa-sun");
+        html.classList.add("dark");
+      } else {
+        el.classList.remove("fa-sun");
+        el.classList.add("fa-moon");
+        html.classList.remove("dark");
+      }
+    };
+  </script>
+  
 </head>
