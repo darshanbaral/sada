@@ -4,9 +4,7 @@
 >
   <div>
     {{- partial "header.html" . -}}
-    <h1 class="text-center px-3">
-      {{ .Site.Params.profile.name }}
-    </h1>
+    {{ partial "name.html" . }}
     {{ partial "profilePhoto" . }}
     {{ partial "social.html" . }}
     {{ partial "aboutDesc" . }}

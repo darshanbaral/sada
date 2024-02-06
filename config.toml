@@ -6,7 +6,6 @@ disableKinds = ["taxonomy"]
     writeStats = true
 
 [params]
-    name = "example.org"
     title = "Sada Theme"
     author = "Darshan Baral"
     description = "Simple portfolio theme"
@@ -15,7 +14,8 @@ disableKinds = ["taxonomy"]
 
     # Profile section
     [params.profile]
-        name = "Sada Theme"
+        name = "First Last"
+        title = "Abbr., K.A."
         photo = "images/profile.jpg"
 
     # Section for links to social websites
