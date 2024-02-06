@@ -3,6 +3,7 @@ license = "MIT"
 licenselink = "https://github.com/darshanbaral/sada/blob/master/LICENSE"
 description = "Simple theme for resume created using Tailwind CSS"
 homepage = "https://github.com/darshanbaral/sada"
+demosite = "https://sadademo.netlify.app/"
 tags = ["portfolio", "resume", "simple", "onepage", "tailwindcss"]
 features = ["responsive", "tailwindcss"]
 min_version = "0.121.1"
