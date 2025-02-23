@@ -4,7 +4,7 @@ The sada Theme is a one page responsive portfolio created using Tailwind CSS wit
 
 ## Live demo
 
-[Click here](https://sadademo.netlify.com/) for live demo.
+[Click here](https://sada-dw6.pages.dev/) for live demo.
 
 ## Installation
 
