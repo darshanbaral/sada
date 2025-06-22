@@ -1,5 +1,5 @@
 {{ $css := resources.Get "main.css" }}
-{{ $css = $css | resources.PostCSS }}
+{{ $css = $css | css.PostCSS }}
 {{ if hugo.IsProduction }}
 {{ $css = $css | minify | fingerprint | resources.PostProcess }}
 {{ end }}
