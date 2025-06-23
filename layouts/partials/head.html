@@ -6,7 +6,20 @@
   <meta name="description" content="{{ .Site.Params.description }}" />
   <meta name="author" content="{{ .Site.Params.author }}" />
 
-  {{ partial "linkCSS" . }}
+  {{ $css := resources.Get "main.css" | css.TailwindCSS }}
+  {{ if hugo.IsProduction }}
+  {{ with $css | minify | fingerprint }}
+  <link
+    rel="stylesheet"
+    href="{{ .RelPermalink }}"
+    integrity="{{ .Data.Integrity }}"
+    crossorigin="anonymous"
+  />
+  {{ end }}
+  {{ else}}
+  <link href="{{ $css.RelPermalink }}" rel="stylesheet" />
+  {{ end }}
+
   <link
     rel="stylesheet"
     href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
@@ -32,5 +45,4 @@
       }
     };
   </script>
-  
 </head>

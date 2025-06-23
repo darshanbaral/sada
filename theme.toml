@@ -6,7 +6,7 @@ homepage = "https://github.com/darshanbaral/sada"
 demosite = "https://sadademo.netlify.app/"
 tags = ["portfolio", "resume", "simple", "onepage", "tailwindcss"]
 features = ["responsive", "tailwindcss"]
-min_version = "0.121.1"
+min_version = "0.146.3"
 
 [author]
   name = "Darshan Baral"

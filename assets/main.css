@@ -1,12 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@config './tailwind.config.js';
 
 @layer components {
+  .prose code::before,
   .prose code::after {
-    content: "";
-  }
-  .prose code::before {
-    content: "" !important;
+    content: none !important;
   }
 }
