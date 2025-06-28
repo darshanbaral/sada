@@ -2,7 +2,7 @@
   class="flex flex-row items-center mb-2 p-3 bg-gray-300 dark:bg-gray-700 justify-end"
 >
   <i
-    class="toggle-theme cursor-pointer fas {{ if eq .Site.Params.theme `light` }}fa-moon{{ else }}fa-sun{{ end }} text-gray-700 hover:text-gray-500 dark:text-gray-100 dark:hover:text-gray-300"
+    class="toggle-theme cursor-pointer bi {{ if eq .Site.Params.theme `light` }}bi-lightbulb-off-fill{{ else }}bi-lightbulb-fill{{ end }} text-gray-700 hover:text-gray-500 dark:text-gray-100 dark:hover:text-gray-300"
     onclick="toggleTheme(this)"
   ></i>
 </header>

@@ -23,24 +23,29 @@ disableKinds = ["taxonomy"]
         title = "Links"
 
         [[params.social.list]]
-        icon = "fab fa-linkedin-in"
+        icon = "bi bi-linkedin"
         url = "#"
         title = "LinkedIn"
 
         [[params.social.list]]
-        icon = "fab fa-github"
+        icon = "bi bi-github"
         url = "#"
         title = "GitHub"
 		
 		[[params.social.list]]
-        icon = "ai ai-google-scholar"
+        icon = "bi bi-mortarboard-fill"
         url = "#"
         title = "Google Scholar"
-		
-		[[params.social.list]]
-        icon = "ai ai-researchgate"
+
+        [[params.social.list]]
+        icon = "bi bi-envelope-at-fill"		
         url = "#"
-        title = "ResearchGate"		
+        title = "Email"
+
+        [[params.social.list]]
+        icon = "bi bi-bluesky"
+        url = "#"
+        title = "Bluesky"
 
     # Education section
     [params.education]

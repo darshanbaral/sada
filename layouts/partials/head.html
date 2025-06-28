@@ -20,27 +20,16 @@
   <link href="{{ $css.RelPermalink }}" rel="stylesheet" />
   {{ end }}
 
-  <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-    crossorigin="anonymous"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
-  />
-
   <script>
     const toggleTheme = (el) => {
       const html = document.querySelector("html");
-      if (el.classList.contains("fa-moon")) {
-        el.classList.remove("fa-moon");
-        el.classList.add("fa-sun");
+      if (el.classList.contains("bi-lightbulb-off-fill")) {
+        el.classList.remove("bi-lightbulb-off-fill");
+        el.classList.add("bi-lightbulb-on-fill");
         html.classList.add("dark");
       } else {
-        el.classList.remove("fa-sun");
-        el.classList.add("fa-moon");
+        el.classList.remove("bi-lightbulb-on-fill");
+        el.classList.add("bi-lightbulb-off-fill");
         html.classList.remove("dark");
       }
     };
