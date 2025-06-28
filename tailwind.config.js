@@ -2,8 +2,17 @@ const theme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   important: true,
-  purge: ["layouts/**/*.html"],
+  content: [
+    "content/**/*.md",
+    "layouts/**/*.html",
+    "./themes/**/layouts/**/*.html",
+    "./content/**/layouts/**/*.html",
+    "./layouts/**/*.html",
+    "./content/**/*.html",
+  ],
+  // purge: ["layouts/**/*.html"],
   darkMode: "class", // or 'media' or 'class'
+  safelist: ["prose"],
   theme: {
     extend: {
       backgroundColor: (theme) => ({
