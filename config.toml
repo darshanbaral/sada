@@ -8,7 +8,7 @@ disableKinds = ["taxonomy"]
 [params]
     title = "Sada Theme"
     author = "Darshan Baral"
-    description = "Simple portfolio theme"
+    description = "About Me"
     copyright = "Custom copyright message"
     theme = "dark" # `dark` or `light`
 
@@ -122,6 +122,11 @@ disableKinds = ["taxonomy"]
 		
 		[[params.projects.list]]
         title = "Awesome Project 2"
+        url = "#"
+        description = "Description of the **awesome** project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+
+        [[params.projects.list]]
+        title = "Awesome Project 3"
         url = "#"
         description = "Description of the **awesome** project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 

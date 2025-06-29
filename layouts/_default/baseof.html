@@ -1,11 +1,8 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.Language }}" class="{{ .Site.Params.theme }}">
+<html lang="{{ .Site.Language }}" class="max-w-5xl min-w-xs mx-auto {{ .Site.Params.theme }}">
   {{- partial "head.html" . -}}
   <body
-    class="max-w-screen-md min-w-xs mx-auto prose pb-3 dark:prose-dark bg-gray-100 dark:bg-dark1 duration-250"
-  >
-    <main class="flex sm:flex-row-reverse flex-row flex-wrap">
-      {{- block "main" . }}{{ end }}
-    </main>
+    class="text-gray-950 dark:text-gray-100 bg-gray-200 dark:bg-gray-800 antialiased shadow-xl rounded">
+    {{- block "main" . }}{{ end }}
   </body>
 </html>

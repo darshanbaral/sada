@@ -1,6 +1,6 @@
-<div class="px-3">
+<div class="mt-8 mb-8">
   <h3>{{ .Site.Params.hobbies.title }}</h3>
   {{ range .Site.Params.hobbies.list }}
-  <p class="ml-1">{{ .interest }}</p>
+  <div class="flex"><span>{{ .interest }}</span></div>
   {{ end }}
 </div>

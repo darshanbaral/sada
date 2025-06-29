@@ -1,25 +1,30 @@
 {{ define "main" }}
-<section
-  class="w-full sm:w-2/5 bg-gray-200 dark:bg-dark2 rounded shadow flex flex-col justify-between"
->
-  <div>
-    {{- partial "header.html" . -}}
-    {{ partial "name.html" . }}
-    {{ partial "profilePhoto" . }}
-    {{ partial "social.html" . }}
-    {{ partial "aboutDesc" . }}
-    {{ partial "language.html" . }}
-    {{ partial "hobby.html" . }}
-  </div>
-  {{- partial "footer.html" . -}}
-</section>
+<main class="flex flex-row flex-wrap bg-gray-100 dark:bg-gray-700">
+  <section
+    class="w-full sm:w-2/5 flex flex-col justify-between bg-gray-300 dark:bg-gray-900"
+  >
+    <div>
+      {{- partial "header.html" . -}}
 
-<section class="w-full sm:w-3/5 px-3">  
-  {{ partial "experience.html" . }}
-  {{ partial "education.html" . }}
-  {{ partial "project.html" . }}
-  {{ partial "skill.html" . }}
-</section>
+      <div class="px-3">
+        {{ partial "name.html" . }}
+        {{ partial "profilePhoto" . }}
+        {{ partial "aboutDesc" . }}
+        {{ partial "language.html" . }}
+        {{ partial "hobby.html" . }}
+      </div>
+    </div>
+    {{- partial "footer.html" . -}}
+  </section>
+
+  <section class="w-full sm:w-3/5 p-3">
+    {{ partial "experience.html" . }}
+    <hr />
+    {{ partial "education.html" . }}
+    <hr />
+    {{ partial "project.html" . }}
+    <hr />
+    {{ partial "skill.html" . }}
+  </section>
+</main>
 {{ end }}
-
-
